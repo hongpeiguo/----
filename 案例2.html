@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: "";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .box {
+        width: 248px;
+        height: 163px;
+        border: 1px solid #ccc;
+        margin: 100px auto;
+
+    }
+
+    .box h3 {
+        height: 32px;
+        line-height: 32px;
+        border-bottom: 1px dotted #ccc;
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 15px;
+    }
+
+    .box ul li a {
+        font-size: 12px;
+        color: #666;
+        text-decoration: none;
+
+    }
+
+    .box ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .box ul li {
+        height: 23px;
+        line-height: 23px;
+        padding: 0 15px;
+    }
+
+    .box ul {
+        margin-top: 7px;
+    }
+
+    .obox {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        color: yellow;
+        margin: 0 auto;
+    }
+
+    .obox:hover {
+        box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, rgba(0, 0, 0, .3));
+    }
+
+    div:hover {
+        box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+    }
+</style>
+
+<body>
+    <div class="box clearfix">
+        <h3>品优购快报</h3>
+        <ul>
+            <li><a href="#">【爆款】特惠耳机5折秒</a></li>
+            <li><a href="#">【爆款】母亲节，健康好礼低至三折</a></li>
+            <li><a href="#">【爆款】爆款电脑1折秒</a></li>
+            <li><a href="#">【爆款】9.9元电视机一台</a></li>
+            <li><a href="#">【爆款】智能空调立省1元</a></li>
+        </ul>
+    </div>
+    <div class="obox">
+        123
+    </div>
+</body>
+
+</html>
